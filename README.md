@@ -1,10 +1,7 @@
-# C++编译流程
-以Unix系统编译中间文件为说明：
-
-.cpp—（编译预处理）—>.ii—（编译）—>.s—（汇编）—>.o—（ld，连接）—>.out
-
-
-# #include
-作用于编译预处理阶段，将被include文件抄送在include所在位置，并会在相应位置写出调用栈，生成中间文件.ii，该中间文件可读
-
-include文件加引号表示先从当前目录寻找索引，加尖括号表示从编译器指定根目录索引，Unix默认为"~//usr/include"目录
+#if defined WIN32
+	#include "WindowsLogic.h"
+#elif defined MAC
+    #include "MacLogic.h"
+#elif defined LINUX
+    #include "LinuxLogic.h"
+#endif
