@@ -5,3 +5,12 @@
 #elif defined LINUX
     #include "LinuxLogic.h"
 #endif
+
+class Message
+{
+public:
+    Message(int a) {
+	yourObj = YorClass(a);
+    }
+	YourClass yourObj;
+};
