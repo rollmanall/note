@@ -39,4 +39,10 @@ int main() {
     t.join();
     t2.join();
     auto c = getchar();
+    for (size_t j = 0; j < num; j++)
+        {
+            string str = "thread id:" + 
+                to_string(tId) + "  print:" + to_string(j) + "\n";
+            cout << str;
+        }
 }
