@@ -46,3 +46,5 @@ int main() {
             cout << str;
         }
 }
+
+模块：iostream、thread、string
