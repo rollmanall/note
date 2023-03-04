@@ -48,3 +48,11 @@ int main() {
 }
 
 模块：iostream、thread、string
+auto func = [](double a, double b) {
+        for (size_t i = 0; i < j; i++)
+        {
+            string str = "id:" + 
+                to_string(a) + "  print:" + to_string(i) + "\n";
+            cout << str;
+        }
+    };
